@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index2.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="AboutMe.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          CRAIG BURCH
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/coding.png)"></div>
+
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/Lfc.png" alt="">
+            </div>
+
+            <div class="subtitle">Discovered my love for coding in summer 2019.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Learning.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/decision.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Made the decision to learn coding and started research on the best way to start</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/computer.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/Html.png" alt="">
+            </div>
+
+            <div class="subtitle">Started to learn html just after christmas 2019.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Css.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/Css.png" alt="">
+            </div>
+
+            <div class="subtitle">Started to learn Css in January 2020</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Javascript.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/Java.png" alt="">
+            </div>
+
+            <div class="subtitle">Started to learn Javascript in March 2020</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Php.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/php.png" alt="">
+            </div>
+
+            <div class="subtitle">Started to learn PHP and OOP in may 2020</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Python.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/python.png" alt="">
+            </div>
+
+            <div class="subtitle">Before the end on 2020 I am hopfully going to start learning Python.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/C++.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/C++.png" alt="">
+            </div>
+
+            <div class="subtitle">Before the end of 2020 I am hopfully going to start learning C++</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Vsc.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/vsc.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Visual Studio code</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Github.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+               <img src="logo/github.png" alt="">
+             
+         
+            </div>
+
+            <div class="subtitle">Some of my work is on github.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Inprovment.png)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/so.jpg" alt="">
+            </div>
+
+            <div class="subtitle">I am constantly learning how to improve my code.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(pictures/Fsd.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <img src="logo/Fsd.jpg" alt="">
+            </div>
+
+            <div class="subtitle">Hopefully by the end of 2022 I will be a full stack Developer.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
+
